@@ -491,7 +491,7 @@ function App() {
           </div>
           <div className="pt-8 mt-8 border-t border-gray-700">
             <p className="text-sm text-gray-400">
-              © 2024 Zwe Zar Ni. Built with React and Tailwind CSS.
+              © 2025 Zwe Zar Ni. Built with React and Tailwind CSS.
             </p>
           </div>
         </div>
