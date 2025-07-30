@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Github,
   Mail,
@@ -12,9 +11,12 @@ import {
   GitBranch
 } from "lucide-react";
 
+import ReactLenis from "lenis/react";
+
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <ReactLenis root options={{ duration: 2 }} />
       {/* Hero Section */}
       <section className="py-20 text-white bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900">
         <div className="max-w-4xl px-6 mx-auto">
@@ -95,8 +97,6 @@ function App() {
                 </span>
               </div>
             </div>
-
-            {/* Commercial Projects */}
             <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">
