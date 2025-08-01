@@ -18,26 +18,26 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <ReactLenis root options={{ duration: 2 }} />
       {/* Hero Section */}
-      <section className="py-20 text-white bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900">
+      <section className="py-20 text-white bg-gradient-to-br from-teal-100 via-white to-violet-100">
         <div className="max-w-4xl px-6 mx-auto">
-          <div className="text-center">
+          <div className="text-center text-black">
             <h1 className="mb-4 text-5xl font-bold tracking-tight md:text-6xl">
               Zwe Zar Ni
             </h1>
-            <p className="mb-8 text-xl font-light text-blue-100 md:text-2xl">
+            <p className="mb-8 text-xl font-light text-slate-700 md:text-2xl">
               Software Developer
             </p>
-            <div className="flex flex-col items-center justify-center gap-6 text-blue-100 md:flex-row">
+            <div className="flex flex-col items-center justify-center gap-6 text-slate-700 md:flex-row">
               <a
                 href="tel:+959963693157"
-                className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
+                className="flex items-center gap-2 transition-colors duration-200 hover:text-slate-900"
               >
                 <Phone size={18} />
                 +95 996 369 315 7
               </a>
               <a
                 href="mailto:heinzwe2626@gmail.com"
-                className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
+                className="flex items-center gap-2 transition-colors duration-200 hover:text-slate-900"
               >
                 <Mail size={18} />
                 heinzwe2626@gmail.com
@@ -46,7 +46,7 @@ function App() {
                 href="https://github.com/Zwe-Zar-Ni"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
+                className="flex items-center gap-2 transition-colors duration-200 hover:text-slate-900"
               >
                 <Github size={18} />
                 GitHub Profile
@@ -84,7 +84,7 @@ function App() {
             Featured Projects
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <h3 className="mb-2 text-lg font-bold text-gray-900">
                 Flash International Call
               </h3>
@@ -97,7 +97,22 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-2">
+                <h3 className="text-lg font-bold text-gray-900">DreamsChat</h3>
+                <ExternalLink size={16} className="text-gray-400" />
+              </div>
+              <p className="mb-3 text-gray-600">
+                Internal messenger for business community
+              </p>
+              <div className="flex flex-wrap gap-1 mb-3">
+                <span className="px-2 py-1 text-xs text-green-800 bg-green-100 rounded">
+                  Vue.js
+                </span>
+              </div>
+              <p className="text-xs text-gray-500">messenger.ooak.jp</p>
+            </div>
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">
                   Shopping Platform
@@ -115,7 +130,7 @@ function App() {
               <p className="text-xs text-gray-500">shopping.ooak.jp</p>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">
                   Order Management
@@ -133,9 +148,10 @@ function App() {
                   Vue.js
                 </span>
               </div>
+              <p className="text-xs text-gray-500">order.ooak.jp</p>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">Shwe Li</h3>
                 <ExternalLink size={16} className="text-gray-400" />
@@ -148,9 +164,10 @@ function App() {
                   Vue.js
                 </span>
               </div>
+              <p className="text-xs text-gray-500">fooddashboard.ooak.jp</p>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">Job Portal</h3>
                 <ExternalLink size={16} className="text-gray-400" />
@@ -169,7 +186,7 @@ function App() {
               <p className="text-xs text-gray-500">job.ooak.jp</p>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">
                   Student Management
@@ -184,8 +201,9 @@ function App() {
                   Vue.js
                 </span>
               </div>
+              <p className="text-xs text-gray-500">edu.ooak.jp</p>
             </div>
-            <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <h3 className="mb-2 text-lg font-bold text-gray-900">Zentry</h3>
               <p className="mb-3 text-gray-600">
                 Intuitive expense tracker with modern UI
@@ -202,7 +220,7 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <h3 className="mb-2 text-lg font-bold text-gray-900">Listly</h3>
               <p className="mb-3 text-gray-600">
                 Todo list application on steroids
@@ -219,7 +237,7 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <h3 className="mb-2 text-lg font-bold text-gray-900">Aora</h3>
               <p className="mb-3 text-gray-600">AI video showcasing platform</p>
               <div className="flex flex-wrap gap-1 mb-3">
@@ -231,7 +249,7 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className="p-6 transition-all duration-200 transform bg-white shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <h3 className="mb-2 text-lg font-bold text-gray-900">
                 Mobile Apps
               </h3>
@@ -258,8 +276,8 @@ function App() {
           <h2 className="mb-12 text-3xl font-bold text-center text-gray-900">
             Technical Skills
           </h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="p-6 transition-shadow duration-200 bg-white shadow-sm rounded-xl hover:shadow-md">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <Code className="text-blue-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -278,26 +296,21 @@ function App() {
               </div>
             </div>
 
-            <div className="p-6 transition-shadow duration-200 bg-white shadow-sm rounded-xl hover:shadow-md">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
-                <Database className="text-emerald-600" size={24} />
+                <Smartphone className="text-orange-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
-                  Databases & Cloud
+                  Mobile Development
                 </h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {["MySQL", "SQLite", "Firebase", "Supabase"].map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 text-sm font-medium rounded-full bg-emerald-100 text-emerald-800"
-                  >
-                    {skill}
-                  </span>
-                ))}
+                <span className="px-3 py-1 text-sm font-medium text-orange-800 bg-orange-100 rounded-full">
+                  React Native
+                </span>
               </div>
             </div>
 
-            <div className="p-6 transition-shadow duration-200 bg-white shadow-sm rounded-xl hover:shadow-md">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <Server className="text-purple-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -316,21 +329,26 @@ function App() {
               </div>
             </div>
 
-            <div className="p-6 transition-shadow duration-200 bg-white shadow-sm rounded-xl hover:shadow-md">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
-                <Smartphone className="text-orange-600" size={24} />
+                <Database className="text-emerald-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
-                  Mobile Development
+                  Databases & Cloud
                 </h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 text-sm font-medium text-orange-800 bg-orange-100 rounded-full">
-                  React Native
-                </span>
+                {["MySQL", "SQLite", "Firebase", "Supabase"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1 text-sm font-medium rounded-full bg-emerald-100 text-emerald-800"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             </div>
 
-            <div className="p-6 transition-shadow duration-200 bg-white shadow-sm rounded-xl hover:shadow-md">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <Globe className="text-indigo-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -349,7 +367,7 @@ function App() {
               </div>
             </div>
 
-            <div className="p-6 transition-shadow duration-200 bg-white shadow-sm rounded-xl hover:shadow-md">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <GitBranch className="text-red-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
