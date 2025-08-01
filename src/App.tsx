@@ -18,7 +18,7 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <ReactLenis root options={{ duration: 2 }} />
       {/* Hero Section */}
-      <section className="py-20 text-white bg-gradient-to-br from-teal-100 via-white to-violet-100">
+      <section className="py-20 text-white bg-gradient-to-br from-teal-100 via-white to-purple-100">
         <div className="max-w-4xl px-6 mx-auto">
           <div className="text-center text-black">
             <h1 className="mb-4 text-5xl font-bold tracking-tight md:text-6xl">
@@ -84,7 +84,7 @@ function App() {
             Featured Projects
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <h3 className="mb-2 text-lg font-bold text-gray-900">
                 Flash International Call
               </h3>
@@ -97,7 +97,7 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">DreamsChat</h3>
                 <ExternalLink size={16} className="text-gray-400" />
@@ -112,7 +112,7 @@ function App() {
               </div>
               <p className="text-xs text-gray-500">messenger.ooak.jp</p>
             </div>
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">
                   Shopping Platform
@@ -130,7 +130,7 @@ function App() {
               <p className="text-xs text-gray-500">shopping.ooak.jp</p>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">
                   Order Management
@@ -151,7 +151,7 @@ function App() {
               <p className="text-xs text-gray-500">order.ooak.jp</p>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">Shwe Li</h3>
                 <ExternalLink size={16} className="text-gray-400" />
@@ -167,7 +167,7 @@ function App() {
               <p className="text-xs text-gray-500">fooddashboard.ooak.jp</p>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">Job Portal</h3>
                 <ExternalLink size={16} className="text-gray-400" />
@@ -186,7 +186,7 @@ function App() {
               <p className="text-xs text-gray-500">job.ooak.jp</p>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-lg font-bold text-gray-900">
                   Student Management
@@ -203,7 +203,7 @@ function App() {
               </div>
               <p className="text-xs text-gray-500">edu.ooak.jp</p>
             </div>
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <h3 className="mb-2 text-lg font-bold text-gray-900">Zentry</h3>
               <p className="mb-3 text-gray-600">
                 Intuitive expense tracker with modern UI
@@ -220,7 +220,7 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <h3 className="mb-2 text-lg font-bold text-gray-900">Listly</h3>
               <p className="mb-3 text-gray-600">
                 Todo list application on steroids
@@ -237,7 +237,7 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <h3 className="mb-2 text-lg font-bold text-gray-900">Aora</h3>
               <p className="mb-3 text-gray-600">AI video showcasing platform</p>
               <div className="flex flex-wrap gap-1 mb-3">
@@ -249,7 +249,7 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <h3 className="mb-2 text-lg font-bold text-gray-900">
                 Mobile Apps
               </h3>
@@ -277,7 +277,7 @@ function App() {
             Technical Skills
           </h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <Code className="text-blue-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -296,7 +296,7 @@ function App() {
               </div>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <Smartphone className="text-orange-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -310,7 +310,7 @@ function App() {
               </div>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <Server className="text-purple-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -329,7 +329,7 @@ function App() {
               </div>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <Database className="text-emerald-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -348,7 +348,7 @@ function App() {
               </div>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <Globe className="text-indigo-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -367,7 +367,7 @@ function App() {
               </div>
             </div>
 
-            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white via-white to-violet-50 hover:from-teal-100 hover:to-violet-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+            <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <GitBranch className="text-red-600" size={24} />
                 <h3 className="text-xl font-semibold text-gray-900">
