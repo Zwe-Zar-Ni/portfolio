@@ -1,0 +1,2 @@
+- projects details
+- do something with about section (looks dull) , try highlight the main words in pills and arrange them
