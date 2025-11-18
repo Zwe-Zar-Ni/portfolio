@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zwe-zar-ni.netlify.app/sitemap.xml
