@@ -124,7 +124,7 @@ export const projects = [
   },
   {
     name: "OOAK Shopping",
-    size: "lg:col-span-1",
+    size: "lg:col-span-1 lg:row-span-2",
     description: "Multi-vendor eCommerce platform",
     stacks: ["next"],
     links: [
@@ -145,19 +145,6 @@ export const projects = [
         name: "https://github.com/Zwe-Zar-Ni/Zentry",
         icon: <Github size={16} />,
         url: "https://github.com/Zwe-Zar-Ni/Zentry"
-      }
-    ]
-  },
-  {
-    name: "Order Management",
-    size: "lg:col-span-1",
-    description: "Stock & order management for telecom operator",
-    stacks: ["laravel", "vue"],
-    links: [
-      {
-        name: "https://order.ooak.jp",
-        icon: <Globe size={16} />,
-        url: "https://order.ooak.jp"
       }
     ]
   },
@@ -187,31 +174,4 @@ export const projects = [
       }
     ]
   }
-  // {
-  //   name: "Shwe Li",
-  //   size: "lg:col-span-1 lg:row-span-2",
-  //   description: "Restaurant POS admin dashboard with food ordering system",
-  //   stacks: ["vue"],
-  //   links: [
-  //     {
-  //       name: "https://fooddashboard.ooak.jp",
-  //       icon: <Globe size={16} />,
-  //       url: "https://fooddashboard.ooak.jp"
-  //     }
-  //   ]
-  // },
-
-  // {
-  //   name: "Student Management",
-  //   size: "lg:col-span-2",
-  //   description: "International student management system",
-  //   stacks: ["vue"],
-  //   links: [
-  //     {
-  //       name: "https://edu.ooak.jp",
-  //       icon: <Globe size={16} />,
-  //       url: "https://edu.ooak.jp"
-  //     }
-  //   ]
-  // },
 ];
