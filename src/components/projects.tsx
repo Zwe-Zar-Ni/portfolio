@@ -12,7 +12,7 @@ const Projects = () => {
           {projects.map((proj) => (
             <div
               key={proj.name}
-              className={`p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 ${proj.size} rounded-xl hover:shadow-md hover:-translate-y-1`}
+              className={`p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 ${proj.size} rounded-xl hover:shadow-md hover:-translate-y-1`}
             >
               <h3 className="mb-1 text-lg font-bold text-gray-900">
                 {proj.name}

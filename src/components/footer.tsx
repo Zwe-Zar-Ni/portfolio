@@ -2,7 +2,7 @@ import { Github, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-12 text-white bg-gray-900">
+    <footer className="py-12 text-white bg-slate-900">
       <div className="max-w-4xl px-6 mx-auto text-center">
         <h3 className="mb-4 text-2xl font-bold">Let's Connect</h3>
         <p className="mb-8 text-gray-300">

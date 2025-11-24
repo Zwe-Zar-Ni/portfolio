@@ -1,4 +1,3 @@
-import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 interface NavigationProps {
@@ -7,11 +6,11 @@ interface NavigationProps {
 }
 
 const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
-  const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
+      if (window.innerWidth < 768) return;
       setScrolled(window.scrollY > 50);
     };
 
@@ -32,13 +31,12 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       setActiveSection(id);
-      setIsOpen(false);
     }
   };
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed hidden md:block top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "bg-white/80 backdrop-blur-lg shadow-lg" : "bg-transparent"
       }`}
     >
@@ -48,7 +46,7 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
             ZZN
           </div>
 
-          <div className="hidden space-x-8 md:flex">
+          <div className="flex space-x-8">
             {navItems.map((item, index) => (
               <button
                 key={item.id}
@@ -65,33 +63,16 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
                 {item.label}
               </button>
             ))}
+            <a
+              href="https://github.com/Zwe-Zar-Ni"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-700 hover:text-indigo-700"
+            >
+              View GitHub
+            </a>
           </div>
-
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-700 transition-colors md:hidden hover:text-indigo-600"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
-
-        {isOpen && (
-          <div className="pb-4 space-y-3 bg-white md:hidden">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 ${
-                  activeSection === item.id
-                    ? "bg-gradient-to-r from-indigo-600 to-indigo-400 text-white"
-                    : "text-gray-700 hover:bg-gray-100"
-                }`}
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
-        )}
       </div>
     </nav>
   );

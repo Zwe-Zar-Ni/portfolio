@@ -15,7 +15,7 @@ const Skills = () => {
           Technical Skills
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
+          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
             <div className="flex items-center gap-3 mb-4">
               <Code className="text-blue-600" size={24} />
               <h3 className="text-xl font-semibold text-gray-900">
@@ -33,7 +33,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 lg:row-span-2 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 lg:row-span-2 hover:to-indigo-100 rounded-xl hover:shadow-md hover:-translate-y-1">
             <div className="flex items-center gap-3 mb-4">
               <Globe className="text-indigo-600" size={24} />
               <h3 className="text-xl font-semibold text-gray-900">
@@ -52,7 +52,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 lg:row-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
+          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 lg:row-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
             <div className="flex items-center gap-3 mb-4">
               <Database className="text-emerald-600" size={24} />
               <h3 className="text-xl font-semibold text-gray-900">
@@ -71,7 +71,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 rounded-xl hover:shadow-md hover:-translate-y-1">
             <div className="flex items-center gap-3 mb-4">
               <Smartphone className="text-orange-600" size={24} />
               <h3 className="text-xl font-semibold text-gray-900">
@@ -85,7 +85,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 rounded-xl hover:shadow-md hover:-translate-y-1">
             <div className="flex items-center gap-3 mb-4">
               <Server className="text-purple-600" size={24} />
               <h3 className="text-xl font-semibold text-gray-900">
@@ -104,7 +104,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-teal-100 hover:to-purple-100 rounded-xl hover:shadow-md hover:-translate-y-1">
+          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 rounded-xl hover:shadow-md hover:-translate-y-1">
             <div className="flex items-center gap-3 mb-4">
               <GitBranch className="text-red-600" size={24} />
               <h3 className="text-xl font-semibold text-gray-900">

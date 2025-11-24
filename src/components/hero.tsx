@@ -11,42 +11,35 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex items-center justify-center min-h-screen px-6 py-16 overflow-hidden"
+      className="flex items-center justify-center min-h-screen px-6 overflow-hidden md:py-16"
     >
       <div className="grid items-center gap-12 mx-auto max-w-7xl md:grid-cols-2">
         <div
-          className={`space-y-6 transform transition-all duration-1000 ${
+          className={`space-y-4 transform transition-all duration-1000 ${
             isVisible
               ? "translate-x-0 opacity-100"
               : "-translate-x-20 opacity-0"
           }`}
         >
-          <div className="inline-block">
-            <span className="px-4 py-2 text-sm font-medium text-indigo-800 bg-indigo-100 rounded-full">
-              2 Years Experience
-            </span>
-          </div>
-
-          <h1 className="text-5xl font-bold leading-tight md:text-7xl">
+          <h1 className="text-5xl font-black md:text-6xl">
             <span className="text-slate-800">Zwe Zar Ni</span>
           </h1>
 
-          <h2 className="text-3xl font-bold text-indigo-500 md:text-4xl">
+          <h2 className="text-3xl font-bold text-indigo-500">
             Software Engineer
           </h2>
 
-          <p className="text-lg leading-relaxed text-gray-600">
+          <p className="leading-relaxed text-gray-500 ">
             Full-stack developer specializing in building responsive,
             user-friendly applications across web and mobile platforms.
-            Passionate about clean code and continuous learning.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Zwe-Zar-Ni"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 px-8 py-4 font-medium text-indigo-800 transition-all duration-300 transform bg-indigo-100 rounded-lg hover:shadow-md hover:-translate-y-1"
+              className="flex items-center gap-1 px-8 py-4 font-medium text-indigo-800 transition-all duration-300 transform bg-indigo-100 rounded-lg hover:shadow hover:-translate-y-1"
             >
               <Github size={20} />
               View GitHub
