@@ -11,7 +11,7 @@ const Experience = () => {
               Software Engineer
             </h3>
             <p className="text-lg font-medium text-blue-600">OOAK Inc</p>
-            <p className="text-gray-600">December 2023 - Present</p>
+            <p className="text-gray-600">December 2023 - March 2026</p>
           </div>
 
           <div>
@@ -81,6 +81,21 @@ const Experience = () => {
               </li>
             </ul>
           </div>
+
+          <div className="mb-6 mt-12">
+            <h3 className="text-2xl font-bold text-gray-900">
+              Mobile Developer
+            </h3>
+            <p className="text-lg font-medium text-blue-600">A3L</p>
+            <p className="text-gray-600">January 2026 - Present</p>
+          </div>
+          
+           <div>
+            <h4 className="mb-4 text-lg font-semibold text-gray-900">
+              Responsibilities & Contributions:
+            </h4>
+           </div>
+          
         </div>
       </div>
     </section>
