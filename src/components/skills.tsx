@@ -1,129 +1,96 @@
-import {
-  Code,
-  Database,
-  GitBranch,
-  Globe,
-  Server,
-  Smartphone
-} from "lucide-react";
+import { skills } from "../config/skills";
+
+const HeadingNoise = ({ reverse = false }: { reverse?: boolean }) => {
+  return (
+    <div
+      className={`flex gap-2 items-center justify-center ${reverse
+        ? "flex-row-reverse"
+        : "flex-row"}`}
+    >
+      <span className="w-3 h-3 border rounded-sm border-background-primary/80" />
+      <span className="w-8 h-2 rounded-sm bg-background-primary/80" />
+    </div>
+  );
+};
+
+const Footer = () => {
+  return (
+    <div className="flex items-center justify-center gap-4 mt-12 sm:gap-12">
+      <span className="text-sm font-medium opacity-20 text-background-primary">
+        1 2 3
+      </span>
+      <span className="w-2 h-2 rounded-full opacity-20 bg-background-primary" />
+      <span className="w-24 h-2 rounded-full opacity-20 bg-background-primary" />
+      <span className="w-24 h-2 rounded-full opacity-20 bg-background-primary" />
+      <span className="w-2 h-2 rounded-full opacity-20 bg-background-primary" />
+      <span className="text-sm font-medium opacity-20 text-background-primary">
+        1 2 3
+      </span>
+    </div>
+  );
+};
 
 const Skills = () => {
   return (
-    <section className="py-16" id="skills">
-      <div className="max-w-6xl px-1 mx-auto md:px-6">
-        <h2 className="mb-12 text-3xl font-bold text-center text-gray-900">
-          Technical Skills
-        </h2>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 lg:col-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
-            <div className="flex items-center gap-3 mb-4">
-              <Code className="text-blue-600" size={24} />
-              <h3 className="text-xl font-semibold text-gray-900">
-                Programming Languages
-              </h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {["Javascript", "Typescript", "PHP"].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 text-sm font-medium text-blue-800 bg-blue-100 rounded-full"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 lg:row-span-2 hover:to-indigo-100 rounded-xl hover:shadow-md hover:-translate-y-1">
-            <div className="flex items-center gap-3 mb-4">
-              <Globe className="text-indigo-600" size={24} />
-              <h3 className="text-xl font-semibold text-gray-900">
-                Client-side
-              </h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {["Vue.js", "React.js", "Next.js", "Inertia"].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 text-sm font-medium text-indigo-800 bg-indigo-100 rounded-full"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 lg:row-span-2 rounded-xl hover:shadow-md hover:-translate-y-1">
-            <div className="flex items-center gap-3 mb-4">
-              <Database className="text-emerald-600" size={24} />
-              <h3 className="text-xl font-semibold text-gray-900">
-                Databases & Cloud
-              </h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {["MySQL", "SQLite", "Firebase", "Supabase"].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 text-sm font-medium rounded-full bg-emerald-100 text-emerald-800"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 rounded-xl hover:shadow-md hover:-translate-y-1">
-            <div className="flex items-center gap-3 mb-4">
-              <Smartphone className="text-orange-600" size={24} />
-              <h3 className="text-xl font-semibold text-gray-900">
-                Mobile Development
-              </h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-sm font-medium text-orange-800 bg-orange-100 rounded-full">
-                React Native
-              </span>
-            </div>
-          </div>
-
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 rounded-xl hover:shadow-md hover:-translate-y-1">
-            <div className="flex items-center gap-3 mb-4">
-              <Server className="text-purple-600" size={24} />
-              <h3 className="text-xl font-semibold text-gray-900">
-                Server-side
-              </h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {["Laravel", "Node.js"].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 text-sm font-medium text-purple-800 bg-purple-100 rounded-full"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="p-6 transition-all duration-200 transform shadow-sm bg-gradient-to-br from-white to-white hover:from-pink-100 hover:to-indigo-100 rounded-xl hover:shadow-md hover:-translate-y-1">
-            <div className="flex items-center gap-3 mb-4">
-              <GitBranch className="text-red-600" size={24} />
-              <h3 className="text-xl font-semibold text-gray-900">
-                Other Technologies
-              </h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {["Git", "GitHub", "Docker", "Linux"].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 text-sm font-medium text-red-800 bg-red-100 rounded-full"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
+    <section className="max-w-screen-xl py-16 mx-auto">
+      <div className="flex items-center justify-center gap-8 mb-12 sm:gap-24">
+        <HeadingNoise />
+        <h1 className="text-xl font-bold text-center text-heading-secondary">
+          CORE COMPETENCIES
+        </h1>
+        <HeadingNoise reverse />
       </div>
+      <div className="flex items-center justify-center gap-8 sm:gap-16">
+        <h2 className="p-1.5 sm:px-4 text-heading-primary sm:min-w-[480px] min-w-[240px] font-black text-xl sm:text-4xl border rounded-sm border-background-primary">
+          CORE COMPETENCIES
+        </h2>
+        <h3 className="text-xl sm:text-4xl font-medium text-heading-foreground corner-box py-1.5 px-4">
+          SKILLS
+        </h3>
+      </div>
+      <ul className="relative grid max-w-screen-lg grid-cols-1 gap-8 px-6 mx-auto mt-12 sm:gap-12 md:grid-cols-2">
+        <span className="absolute text-[100px] font-thin sm:font-medium text-background-primary -left-6 sm:-left-12">
+          {"["}
+        </span>
+        <span className="absolute text-[18px] sm:text-[36px] font-medium text-background-primary/50 -left-1 sm:-left-10 top-32">
+          {"+"}
+        </span>
+        <span className="absolute text-[100px] font-thin sm:font-medium text-background-primary -right-6 sm:-right-12 bottom-0">
+          {"]"}
+        </span>
+        <span className="absolute text-[18px] sm:text-[36px] font-medium text-background-primary/50 -right-1 sm:-right-10 bottom-32">
+          {"+"}
+        </span>
+        {skills.map((skill, index) =>
+          <li
+            key={skill.title}
+            className={`flex items-center gap-4 ${index % 2 === 1
+              ? "flex-row-reverse"
+              : "flex-row"}`}
+          >
+            <div className="p-2 border rounded-sm border-background-primary/80">
+              <skill.icon color="#E9454D" size={32} />
+            </div>
+            <div>
+              <h3
+                className={`text-xl ${index % 2 === 1
+                  ? "text-end"
+                  : "text-start"} font-bold uppercase text-heading-primary sm:text-2xl`}
+              >
+                {skill.title}
+              </h3>
+              <p
+                className={`uppercase text-paragraph-primary ${index % 2 === 1
+                  ? "text-end"
+                  : "text-start"}`}
+              >
+                {skill.items.map(item => item).join(", ")}
+              </p>
+            </div>
+          </li>
+        )}
+      </ul>
+      <Footer />
     </section>
   );
 };
