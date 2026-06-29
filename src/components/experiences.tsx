@@ -1,17 +1,5 @@
 import { experiences } from "../config/experiences";
-
-const HeadingNoise = ({ reverse = false }: { reverse?: boolean }) => {
-  return (
-    <div
-      className={`flex gap-2 items-center justify-center ${reverse
-        ? "flex-row-reverse"
-        : "flex-row"}`}
-    >
-      <span className="w-3 h-3 border rounded-sm border-background-primary/80" />
-      <span className="w-8 h-2 rounded-sm bg-background-primary/80" />
-    </div>
-  );
-};
+import SectionHeader from "./section-header";
 
 const Footer = () => {
   return (
@@ -30,13 +18,7 @@ const Footer = () => {
 const Experiences = () => {
   return (
     <section className="max-w-screen-xl py-16 mx-auto">
-      <div className="flex items-center justify-center gap-8 mb-12 sm:gap-24">
-        <HeadingNoise />
-        <h1 className="text-xl font-bold text-center text-heading-secondary">
-          CAREER TRAJECTORY
-        </h1>
-        <HeadingNoise reverse />
-      </div>
+      <SectionHeader heading="CAREER TRAJECTORY" />
       <div className="relative flex items-center justify-center gap-8 sm:gap-16">
         <div className="flex items-end gap-4">
           <span className="w-3 h-3 bg-background-primary/50" />
@@ -54,39 +36,46 @@ const Experiences = () => {
         </div>
       </div>
       <ul className="px-8 mt-12">
-        {experiences.map((exp, index) =>
+        {experiences.map((exp, index) => (
           <li key={exp.date} className="relative mb-4">
             <span className="absolute w-4 h-4 rounded-sm bg-background-primary/60 -left-8" />
-            {index < experiences.length - 1
-              ? <span className="absolute w-[2px] h-full top-4 bg-background-primary/60 -left-[25px]" />
-              : null}
+            {index < experiences.length - 1 ? (
+              <span className="absolute w-[2px] h-full top-4 bg-background-primary/60 -left-[25px]" />
+            ) : null}
             <div className="flex flex-col gap-4 mb-1 sm:items-center sm:flex-row">
               <h3 className="px-4 py-1 text-xl font-bold uppercase rounded-sm w-fit text-heading-foreground bg-background-primary">
                 {exp.title}
               </h3>
-              <p className="uppercase text-heading-secondary">
-                [{exp.date}]
-              </p>
+              <p className="uppercase text-heading-secondary">[{exp.date}]</p>
             </div>
             <a
               target="_blank"
               href={exp.link}
-              className="mb-1 underline uppercase text-heading-secondary"
+              className="mb-1 underline uppercase text-heading-primary"
             >
               {exp.company}
             </a>
             {exp.responsibilities && exp.responsibilities.length > 0
-              ? exp.responsibilities.map((res, i) =>
-                  <p
-                    key={i}
-                    className="text-sm font-medium text-paragraph-primary"
-                  >
-                    {res}
-                  </p>
-                )
+              ? exp.responsibilities.map((res, i) => (
+                  <div className="my-3">
+                    <h3
+                      key={i}
+                      className="mb-1 text-lg font-bold text-heading-secondary"
+                    >
+                      {res.title}
+                    </h3>
+                    {res.points.map((point, j) => (
+                      <p
+                        key={j}
+                        className="font-sans font-medium text-paragraph-primary"
+                        dangerouslySetInnerHTML={{ __html: point }}
+                      ></p>
+                    ))}
+                  </div>
+                ))
               : null}
           </li>
-        )}
+        ))}
       </ul>
       <Footer />
     </section>
