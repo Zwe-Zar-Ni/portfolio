@@ -1,17 +1,5 @@
 import { skills } from "../config/skills";
-
-const HeadingNoise = ({ reverse = false }: { reverse?: boolean }) => {
-  return (
-    <div
-      className={`flex gap-2 items-center justify-center ${reverse
-        ? "flex-row-reverse"
-        : "flex-row"}`}
-    >
-      <span className="w-3 h-3 border rounded-sm border-background-primary/80" />
-      <span className="w-8 h-2 rounded-sm bg-background-primary/80" />
-    </div>
-  );
-};
+import SectionHeader from "./section-header";
 
 const Footer = () => {
   return (
@@ -33,13 +21,7 @@ const Footer = () => {
 const Skills = () => {
   return (
     <section className="max-w-screen-xl py-16 mx-auto">
-      <div className="flex items-center justify-center gap-8 mb-12 sm:gap-24">
-        <HeadingNoise />
-        <h1 className="text-xl font-bold text-center text-heading-secondary">
-          CORE COMPETENCIES
-        </h1>
-        <HeadingNoise reverse />
-      </div>
+      <SectionHeader heading="CORE COMPETENCIES" />
       <div className="flex items-center justify-center gap-8 sm:gap-16">
         <h2 className="p-1.5 sm:px-4 text-heading-primary sm:min-w-[480px] min-w-[240px] font-black text-xl sm:text-4xl border rounded-sm border-background-primary">
           CORE COMPETENCIES
@@ -61,34 +43,34 @@ const Skills = () => {
         <span className="absolute text-[18px] sm:text-[36px] font-medium text-background-primary/50 -right-1 sm:-right-10 bottom-32">
           {"+"}
         </span>
-        {skills.map((skill, index) =>
+        {skills.map((skill, index) => (
           <li
             key={skill.title}
-            className={`flex items-center gap-4 ${index % 2 === 1
-              ? "flex-row-reverse"
-              : "flex-row"}`}
+            className={`flex items-center gap-4 ${
+              index % 2 === 1 ? "flex-row-reverse" : "flex-row"
+            }`}
           >
             <div className="p-2 border rounded-sm border-background-primary/80">
               <skill.icon color="#E9454D" size={32} />
             </div>
             <div>
               <h3
-                className={`text-xl ${index % 2 === 1
-                  ? "text-end"
-                  : "text-start"} font-bold uppercase text-heading-primary sm:text-2xl`}
+                className={`text-xl ${
+                  index % 2 === 1 ? "text-end" : "text-start"
+                } font-bold uppercase text-heading-primary sm:text-2xl`}
               >
                 {skill.title}
               </h3>
               <p
-                className={`uppercase text-paragraph-primary ${index % 2 === 1
-                  ? "text-end"
-                  : "text-start"}`}
+                className={`uppercase text-paragraph-primary ${
+                  index % 2 === 1 ? "text-end" : "text-start"
+                }`}
               >
-                {skill.items.map(item => item).join(", ")}
+                {skill.items.map((item) => item).join(", ")}
               </p>
             </div>
           </li>
-        )}
+        ))}
       </ul>
       <Footer />
     </section>
