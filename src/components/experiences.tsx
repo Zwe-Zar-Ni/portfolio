@@ -43,7 +43,7 @@ const Experiences = () => {
               <span className="absolute w-[2px] h-full top-4 bg-background-primary/60 -left-[25px]" />
             ) : null}
             <div className="flex flex-col gap-4 mb-1 sm:items-center sm:flex-row">
-              <h3 className="px-4 py-1 text-xl font-bold uppercase rounded-sm w-fit text-heading-foreground bg-background-primary">
+              <h3 className="px-4 py-1 text-xl font-bold text-white uppercase rounded-sm w-fit bg-background-primary">
                 {exp.title}
               </h3>
               <p className="uppercase text-heading-secondary">[{exp.date}]</p>
@@ -57,11 +57,8 @@ const Experiences = () => {
             </a>
             {exp.responsibilities && exp.responsibilities.length > 0
               ? exp.responsibilities.map((res, i) => (
-                  <div className="my-3">
-                    <h3
-                      key={i}
-                      className="mb-1 text-lg font-bold text-heading-secondary"
-                    >
+                  <div className="my-3" key={i}>
+                    <h3 className="mb-1 text-lg font-bold text-heading-secondary">
                       {res.title}
                     </h3>
                     {res.points.map((point, j) => (
