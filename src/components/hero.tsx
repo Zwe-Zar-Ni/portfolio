@@ -19,7 +19,7 @@ const Hero = () => {
             <h3 className="bg-background-primary p-1.5 font-bold text-xl text-heading-foreground mb-4">
               PERSONAL IDENTIFICATION
             </h3>
-            <p className="text-paragraph-primary border border-paragraph-primary p-1.5">
+            <p className="text-heading-primary border border-paragraph-primary p-1.5">
               FULL NAME: ZWE ZAR NI
               <br />
               SPECIALITY: SOFTWARE ENGINEER

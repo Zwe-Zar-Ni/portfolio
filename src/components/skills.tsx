@@ -46,11 +46,11 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <li
             key={skill.title}
-            className={`flex items-center gap-4 ${
+            className={`flex gap-4 ${
               index % 2 === 1 ? "flex-row-reverse" : "flex-row"
             }`}
           >
-            <div className="p-2 border rounded-sm border-background-primary/80">
+            <div className="w-12 h-12 p-2 border rounded-sm border-background-primary/80">
               <skill.icon color="#E9454D" size={32} />
             </div>
             <div>
@@ -62,11 +62,14 @@ const Skills = () => {
                 {skill.title}
               </h3>
               <p
-                className={`uppercase text-paragraph-primary ${
+                className={`uppercase text-heading-secondary flex flex-col ${
                   index % 2 === 1 ? "text-end" : "text-start"
                 }`}
               >
-                {skill.items.map((item) => item).join(", ")}
+                {/* {skill.items.map((item) => item).join(", ")} */}
+                {skill.items.map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
               </p>
             </div>
           </li>

@@ -11,7 +11,7 @@ export const skills = [
   {
     title: "languages",
     icon: Code,
-    items: ["javascript", "typescript", "php"]
+    items: ["javascript", "typescript", "kotlin", "php"]
   },
   {
     title: "client side",
@@ -21,7 +21,7 @@ export const skills = [
   {
     title: "server side",
     icon: Server,
-    items: ["laravel", "node.js", "php"]
+    items: ["laravel", "node.js"]
   },
   {
     title: "database & cloud",
@@ -31,11 +31,11 @@ export const skills = [
   {
     title: "mobile development",
     icon: Smartphone,
-    items: ["react native"]
+    items: ["react native", "jetpack compose"]
   },
   {
     title: "other technologies",
     icon: GitMerge,
-    items: ["git", "github", "docker", "linux"]
+    items: ["git", "docker", "linux"]
   }
 ];
