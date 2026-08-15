@@ -37,13 +37,13 @@ const Experiences = () => {
       </div>
       <ul className="px-8 mt-12">
         {experiences.map((exp, index) => (
-          <li key={exp.date} className="relative mb-4">
-            <span className="absolute w-4 h-4 rounded-sm bg-background-primary/60 -left-8" />
+          <li key={exp.date} className="relative mb-12">
+            <span className="absolute w-4 h-12 rounded-sm bg-background-primary/60 -left-8" />
             {index < experiences.length - 1 ? (
-              <span className="absolute w-[2px] h-full top-4 bg-background-primary/60 -left-[25px]" />
+              <span className="absolute w-[2px] h-full top-12 bg-background-primary/60 -left-[25px]" />
             ) : null}
             <div className="flex flex-col gap-4 mb-1 sm:items-center sm:flex-row">
-              <h3 className="px-4 py-1 text-xl font-bold text-white uppercase rounded-sm w-fit bg-background-primary">
+              <h3 className="flex items-center h-12 px-4 text-xl font-bold text-white uppercase rounded-sm w-fit bg-background-primary">
                 {exp.title}
               </h3>
               <p className="uppercase text-heading-secondary">[{exp.date}]</p>
@@ -64,7 +64,7 @@ const Experiences = () => {
                     {res.points.map((point, j) => (
                       <p
                         key={j}
-                        className="font-sans font-medium text-paragraph-primary"
+                        className="font-sans font-medium text-heading-secondary"
                         dangerouslySetInnerHTML={{ __html: point }}
                       ></p>
                     ))}

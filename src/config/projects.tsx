@@ -25,6 +25,24 @@ export const projects = [
     ]
   },
   {
+    name: "Naychi Logistics",
+    image: "naychi.png",
+    tagline:
+      "A logistics management platform for local supply chains with real-time tracking and visibility.",
+    description:
+      "Naychi Logistics is a comprehensive logistics management platform designed to streamline supply chain operations. Built for local food and beverage manufacturer, the platform automates real-time tracking, and efficient route planning, enabling seamless delivery and visibility across multiple regions.",
+    features: [
+      "<em class='font-semibold text-heading-tertiary'>Real-Time Tracking & Visibility: </em> Provides real-time updates on active delivery trucks, ensuring efficient delivery and visibility across multiple regions.",
+      "<em class='font-semibold text-heading-tertiary'>Route Planning & Optimization: </em> Streamlines multi-shop order workflows and delivery operations, optimizing routes and reducing delivery times.",
+      "<em class='font-semibold text-heading-tertiary'>Centralized Management System: </em> Designed a centralized management system for shop registries, inventory fulfillment, and automated sales order processing."
+    ],
+    techstack: ["React", "Google Maps", "Laravel", "MySQL"],
+    technicalHighlights: [
+      "<em class='font-semibold text-heading-tertiary'>Custom Map Visualization: </em> Built a custom map visualization layer using spatial clustering to highlight travel footprints and provide real-time tracking.",
+      "<em class='font-semibold text-heading-tertiary'>Designed a centralized management system for shop registries,</em> inventory fulfillment, and automated sales order processing."
+    ]
+  },
+  {
     name: "Flash Call",
     image: "flash-call.png",
     tagline:
