@@ -16,11 +16,6 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000"
-
-[[headers]]
   for = "/*.css"
   [headers.values]
     Cache-Control = "public, max-age=31536000"
@@ -31,6 +26,6 @@
     Cache-Control = "public, max-age=31536000"
 
 [[headers]]
-  for = "/profile.png"
+  for = "/*.png"
   [headers.values]
     Cache-Control = "public, max-age=31536000"
