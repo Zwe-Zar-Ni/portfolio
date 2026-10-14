@@ -21,7 +21,7 @@ export const skills = [
   {
     title: "server side",
     icon: Server,
-    items: ["laravel", "node.js"]
+    items: ["laravel", "spring boot"]
   },
   {
     title: "database & cloud",
@@ -31,7 +31,7 @@ export const skills = [
   {
     title: "mobile development",
     icon: Smartphone,
-    items: ["react native", "jetpack compose"]
+    items: ["react native", "expo", "jetpack compose"]
   },
   {
     title: "other technologies",
