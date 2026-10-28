@@ -59,7 +59,7 @@ export const experiences = [
     title: "Freelance Software Developer",
     company: "Solvere",
     link: "https://www.solvere.website",
-    date: "June 2026 - August 2026",
+    date: "June 2026 - Present",
     responsibilities: [
       {
         title: "Logistics & Route Management System",
