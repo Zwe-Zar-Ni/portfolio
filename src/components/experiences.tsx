@@ -58,15 +58,26 @@ const Experiences = () => {
             {exp.responsibilities && exp.responsibilities.length > 0
               ? exp.responsibilities.map((res, i) => (
                   <div className="my-3" key={i}>
-                    <h3 className="mb-1 text-lg font-bold text-heading-secondary">
-                      {res.title}
-                    </h3>
+                    {res.link !== "" ? (
+                      <a
+                        target="_blank"
+                        href={res.link}
+                        className="mb-1 text-lg font-bold text-heading-secondary"
+                      >
+                        {res.title}
+                      </a>
+                    ) : (
+                      <h3 className="mb-1 text-lg font-bold text-heading-secondary">
+                        {res.title}
+                      </h3>
+                    )}
                     {res.points.map((point, j) => (
                       <p
                         key={j}
                         className="font-sans font-medium text-heading-secondary"
-                        dangerouslySetInnerHTML={{ __html: point }}
-                      ></p>
+                      >
+                        · {point}
+                      </p>
                     ))}
                   </div>
                 ))
