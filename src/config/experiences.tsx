@@ -1,4 +1,17 @@
-export const experiences = [
+export type Experience = {
+  title: string;
+  company: string;
+  link: string;
+  date: string;
+  responsibilities: {
+    title: string;
+    stack: string;
+    link: string;
+    points: string[];
+  }[];
+};
+
+export const experiences: Experience[] = [
   {
     title: "Software Engineer",
     company: "OOAK Inc",
@@ -6,67 +19,75 @@ export const experiences = [
     date: "December 2023 - March 2026",
     responsibilities: [
       {
-        title: "Full-Stack & Ecosystem Development",
+        title: "Order Management Dashboard",
+        stack: "Laravel · Vue.js · MySQL",
+        link: "https://order.ooak.jp/",
         points: [
-          "<em class='font-semibold text-heading-primary'>Architected and maintained scalable full-stack web systems</em>, including a multi-vendor eCommerce platform, comprehensive school management software, and tailored job-matching platforms with intuitive user dashboards.",
-          "<em class='font-semibold text-heading-primary'>Engineered a cross-industry private messaging system</em> to facilitate secure communication and networking across telecom, retail, education, and real estate sectors."
+          "Developed a centralized order management dashboard for physical home WiFi, pocket WiFi, and data SIM products in Japan replacing fragmented paper-based and spreadsheet workflows with a unified order management system.",
+          "Implemented order lifecycle management, enabling staff to track order statuses, process returns, and manage order records through a centralized interface.",
+          "Developed operational features including Excel exports, order-related document storage, and sales analytics to improve data accessibility and business reporting.",
+          "Contributed to database design and implemented role-based access control to support structured data management and secure staff operations."
         ]
       },
       {
-        title: "Internal Operations & Automation",
+        title: "SIM Operation Management System",
+        stack:
+          "React.js · TypeScript · TanStack Query · Axios · React Hook Form · Zod · Tailwind CSS",
+        link: "https://console.legitone.co.jp/",
         points: [
-          "<em class='font-semibold text-heading-primary'>Built centralized operational dashboards and internal tools </em> that automated manual workflows for telecom and restaurant operations, including SIM/WiFi ordering, employee scheduling, and real-time inventory tracking.",
-          "<em class='font-semibold text-heading-primary'>Led the development of cross-platform inventory management solutions</em> using React Native, significantly improving data organization and system usability for restaurant operations."
+          "Developed frontend interfaces for a SIM operation management platform connecting telecom operators, MVNOs, and an upstream internet service provider.",
+          "Built API-driven dashboards and data management interfaces using React and TypeScript, integrating backend services with Axios and TanStack Query for server-state management and data synchronization.",
+          "Implemented complex forms with React Hook Form and Zod, providing schema-based validation and structured input handling for operational workflows.",
+          "Developed reusable UI components and data table interfaces to support consistent user experiences across administrative modules."
         ]
       },
       {
-        title: "Collaboration & Delivery",
+        title: "Flash Call — International VoIP Calling Application",
+        stack:
+          "React Native · TypeScript · Twilio Programmable Voice · Stripe · Zustand · NativeWind",
+        link: "https://play.google.com/store/apps/details?id=com.flash.ooak&hl=en",
         points: [
-          "<em class='font-semibold text-heading-primary'>Collaborated with cross-functional teams</em> to design, build, and deliver user-centric, efficient software solutions that directly solved real-world business challenges."
+          "Developed the cross-platform mobile frontend for an international calling application, integrating Twilio Programmable Voice SDK for incoming and outgoing calls and Stripe for purchasing call plans and call minutes.",
+          "Implemented centralized call-state management using Zustand and coordinated call lifecycle events between the mobile application, backend, and Twilio to handle call states not fully exposed by the React Native SDK.",
+          "Integrated native platform capabilities to support background calling and platform-specific calling functionality, including iOS CallKit and Android services.",
+          "Implemented call history functionality and prepared production releases, managing application publishing requirements for both the Apple App Store and Google Play Store."
         ]
       }
     ]
   },
   {
-    title: "Mobile Developer",
+    title: "Frontend Developer",
     company: "A3L",
-    link: "https://www.a3l.dev/",
-    date: "January 2026 - July 2026",
+    link: "https://www.a3l.dev",
+    date: "January 2026 - June 2026",
     responsibilities: [
       {
-        title: "Mobile App Development",
+        title: "Nice Style Travel & Tours",
+        stack:
+          "TypeScript · React Native · Expo · React · TanStack Start · Payload CMS · Next.js · MongoDB · TanStack Query · TanStack Form · Zustand",
+        link: "https://play.google.com/store/apps/details?id=com.nicestylegroup.travel&pcampaignid=web_share",
         points: [
-          "<em class='font-semibold text-heading-primary'>Developed and launched a comprehensive travel agency mobile application</em>, enabling users to seamlessly browse international vacation tours, view visa packages, and book local and international flights.",
-          "<em class='font-semibold text-heading-primary'>Architected and implemented the client-side mobile experience,</em> focusing on intuitive navigation, smooth user flows, and optimized performance for high-traffic booking systems."
-        ]
-      },
-      {
-        title: "Backend, CMS, & Data Management",
-        points: [
-          "<em class='font-semibold text-heading-primary'>Managed and engineered the Content Management System (CMS), </em>designing the data architecture and building robust data structures to support dynamic tour information, visa requirements, and real-time flight inventory."
-        ]
-      },
-      {
-        title: "Admin Tools & User Engagement",
-        points: [
-          "<em class='font-semibold text-heading-primary'>Designed and developed a custom administrative dashboard</em> to streamline business operations and centralize user interactions.",
-          "<em class='font-semibold text-heading-primary'>Implemented real-time communication features</em> within the admin panel, allowing staff to instantly broadcast targeted push notifications and efficiently manage and respond to user inquiries regarding visas and tours."
+          "Collaborated on building the customer-facing travel app. Established reusable form handling with TanStack Form to centralize form configuration and improve consistency across the app.",
+          "Led approximately 90% of the admin dashboard frontend development, building administrative interfaces with TanStack Start, TanStack Query, TanStack Form, Tailwind CSS, and shadcn/ui.",
+          "Led approximately 90% of CMS development using Payload CMS, Next.js, and MongoDB. Designed schemas to migrate existing tour and visa data into structured multilingual content, implemented lifecycle hooks to maintain translations, and exposed custom APIs for mobile app consumption."
         ]
       }
     ]
   },
   {
-    title: "Freelance Software Developer",
+    title: "Frontend Developer",
     company: "Solvere",
     link: "https://www.solvere.website",
     date: "June 2026 - Present",
     responsibilities: [
       {
-        title: "Logistics & Route Management System",
+        title: "Naychi Logistics Platform",
+        stack:
+          "TypeScript · React.js · Google Maps · TanStack Query · Pusher · React Hook Form · Zod · Zustand · i18next · Tailwind CSS",
+        link: "",
         points: [
-          "<em class='font-semibold text-heading-primary'>Architected and deployed an end-to-end logistics platform for a food & beverage manufacturer,</em>streamlining multi-shop order workflows and delivery operations.",
-          "<em class='font-semibold text-heading-primary'>Developed a real-time map-tracking interface to monitor active delivery trucks on sales routes,</em> improving fleet visibility and route efficiency.",
-          "<em class='font-semibold text-heading-primary'>Designed a centralized management system</em> for shop registries, inventory fulfillment, and automated sales order processing."
+          "Developed frontend features for a logistics platform serving a food manufacturing and distribution business, centralizing merchant management, order-collection visits, and delivery route planning.",
+          "Implemented role-aware interfaces and real-time truck location tracking for collection and delivery routes, integrating browser geolocation, Google Maps, and Pusher for live location updates.."
         ]
       }
     ]

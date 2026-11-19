@@ -16,7 +16,7 @@ export const skills = [
   {
     title: "client side",
     icon: Globe,
-    items: ["vue.js", "react.js", "next.js", "inertia"]
+    items: ["vue.js", "react.js", "inertia.js"]
   },
   {
     title: "server side",
@@ -36,6 +36,6 @@ export const skills = [
   {
     title: "other technologies",
     icon: GitMerge,
-    items: ["git", "docker", "linux"]
+    items: ["linux", "git", "docker"]
   }
 ];
